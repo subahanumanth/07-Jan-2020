@@ -1,10 +1,9 @@
 <?php
 include("list.php");
-
 ?>
 
 <html>
-<form action="new.php"  method="POST" name="validate" class="form">
+<form action="<?php if(isset($_POST['submit'])){if(is_null($nameError)){echo 'simple.php';}elseif(is_string($nameError)){echo 'new.php';}}  ?>" method="POST" name="validate" class="form">
 Name : <input id="name" type="text" name="name" value="<?php echo isset($_POST['name']) ? $_POST['name'] : ""; ?>"><?php echo sprintf("%s",$nameError); ?><br><br>
 Age : <input id="age" type = "text" name="age" value="<?php echo isset($_POST['age']) ? $_POST['age'] : ""; ?>"><?php echo sprintf("%s",$ageError);  ?><br><br>
 Gender : <?php echo sprintf("%s",$genderError);  ?>
@@ -28,6 +27,3 @@ Email ID :
 
 <script src="form.js"></script>
 </html>
-
-
-

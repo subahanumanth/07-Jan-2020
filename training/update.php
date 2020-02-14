@@ -1,24 +1,24 @@
 <?php
+include("mysqlConnect.php");
 if(isset($_POST['update'])) {
-$idno = $_POST['update'];
-$connect = mysqli_connect("localhost","root","aspire@123");
-mysqli_select_db($connect, "Data");
-$query = "select *from test where idno = $idno";
-$query1 = mysqli_query($connect,$query);
-$rows = mysqli_num_rows($query1);
-if($rows > 0) {
-while($row = mysqli_fetch_assoc($query1)) {
-    $idnum = $row['idno'];
-    $name = $row['name'];
-    $age = $row['age'];
-    $gender = $row['gender'];
-    $city = $row['city'];
-    $flavours = $row['flavours'];
-    $flavour = explode(',',$flavours);
-    $email = $row['email'];
-    echo $name."\t".$age."\t".$gender."\t".$city."\t".$flavour."\t".$email."\n";
-}
-}
+    $idno = $_POST['update'];
+    $connect = mysql::mysqlConnect();
+    $query = "select *from test where idno = $idno";
+    $query1 = mysqli_query($connect,$query);
+    $rows = mysqli_num_rows($query1);
+    if($rows > 0) {
+        while($row = mysqli_fetch_assoc($query1)) {
+            $idnum = $row['idno'];
+            $name = $row['name'];
+            $age = $row['age'];
+            $gender = $row['gender'];
+            $city = $row['city'];
+            $flavours = $row['flavours'];
+            $flavour = explode(',',$flavours);
+            $email = $row['email'];
+            echo $name."\t".$age."\t".$gender."\t".$city."\t".$flavour."\t".$email."\n";
+        }
+    }
 }
 ?>
 

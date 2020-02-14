@@ -1,25 +1,13 @@
 <?php
+include("mysqlConnect.php");
 if(isset($_POST['delete'])) {
             $idno = $_POST['delete'];
             echo $idno;
-            $dbServerName = "localhost";
-            $dbUserName = "root";
-            $dbPassword = "aspire@123";
-            $dbName = "Data";
+            $connection = mysql::mysqlConnect();
 
-            $connection = mysqli_connect($dbServerName, $dbUserName, $dbPassword, $dbName);
-
-            if($connection) {
-                echo "database connected";
-            } else {
-                echo "not connected";
-            }
-            mysqli_select_db($connection,"Data");
             $sql = "delete from test where idno=$idno";
             if(mysqli_query($connection,$sql)) {
                 echo "deleted";
-                $connection = mysqli_connect("localhost", "root", "aspire@123");
-                mysqli_select_db($connection, "Data");
                 $delete = "select *from test";
                 $result = mysqli_query($connection,$delete);
                 $rows = mysqli_num_rows($result);
@@ -38,6 +26,7 @@ if(isset($_POST['delete'])) {
                     }
                 }
             }
+            mysql::mysqlClose($connection);
 }
 
 
