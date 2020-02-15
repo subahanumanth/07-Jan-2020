@@ -1,0 +1,1737 @@
+1.select FIRST_NAME as 'First Name',LAST_NAME as 'Last Name' from employees ;
+
+
+
+  	First Name	Last Name
+
+1	Ellen	Abel
+
+2	Sundar	Ande
+
+3	Mozhe	Atkinson
+
+4	David	Austin
+
+5	Hermann	Baer
+
+6	Shelli	Baida
+
+7	Amit	Banda
+
+8	Elizabeth	Bates
+
+9	Sarah	Bell
+
+10	David	Bernstein
+
+11	Laura	Bissot
+
+12	Harrison	Bloom
+
+13	Alexis	Bull
+
+14	Anthony	Cabrio
+
+15	Gerald	Cambrault
+
+16	Nanette	Cambrault
+
+17	John	Chen
+
+18	Kelly	Chung
+
+19	Karen	Colmenares
+
+20	Curtis	Davies
+
+21	Lex	De Haan
+
+22	Julia	Dellinger
+
+23	Jennifer	Dilly
+
+24	Louise	Doran
+
+25	Bruce	Ernst
+
+26	Alberto	Errazuriz
+
+27	Britney	Everett
+
+28	Daniel	Faviet
+
+29	Pat	Fay
+
+30	Kevin	Feeney
+
+31	Jean	Fleaur
+
+32	Tayler	Fox
+
+33	Adam	Fripp
+
+34	Timothy	Gates
+
+35	Ki	Gee
+
+36	Girard	Geoni
+
+37	William	Gietz
+
+38	Douglas	Grant
+
+39	Kimberely	Grant
+
+40	Nancy	Greenberg
+
+41	Danielle	Greene
+
+42	Peter	Hall
+
+43	Michael	Hartstein
+
+44	Shelley	Higgins
+
+45	Guy	Himuro
+
+46	Alexander	Hunold
+
+47	Alyssa	Hutton
+
+48	Charles	Johnson
+
+49	Vance	Jones
+
+50	Payam	Kaufling
+
+51	Alexander	Khoo
+
+52	Janette	King
+
+53	Steven	King
+
+54	Neena	Kochhar
+
+55	Sundita	Kumar
+
+56	Renske	Ladwig
+
+57	James	Landry
+
+58	David	Lee
+
+59	Jack	Livingston
+
+60	Diana	Lorentz
+
+61	Jason	Mallin
+
+62	Steven	Markle
+
+63	James	Marlow
+
+64	Mattea	Marvins
+
+65	Randall	Matos
+
+66	Susan	Mavris
+
+67	Samuel	McCain
+
+68	Allan	McEwen
+
+69	Irene	Mikkilineni
+
+70	Kevin	Mourgos
+
+71	Julia	Nayer
+
+72	Donald	OConnell
+
+73	Christopher	Olsen
+
+74	TJ	Olson
+
+75	Lisa	Ozer
+
+76	Karen	Partners
+
+77	Valli	Pataballa
+
+78	Joshua	Patel
+
+79	Randall	Perkins
+
+80	Hazel	Philtanker
+
+81	Luis	Popp
+
+82	Trenna	Rajs
+
+83	Den	Raphaely
+
+84	Michael	Rogers
+
+85	John	Russell
+
+86	Nandita	Sarchand
+
+87	Ismael	Sciarra
+
+88	John	Seo
+
+89	Sarath	Sewall
+
+90	Lindsey	Smith
+
+91	William	Smith
+
+92	Stephen	Stiles
+
+93	Martha	Sullivan
+
+94	Patrick	Sully
+
+95	Jonathon	Taylor
+
+96	Winston	Taylor
+
+97	Sigal	Tobias
+
+98	Peter	Tucker
+
+99	Oliver	Tuvault
+
+100	Jose Manuel	Urman
+
+101	Peter	Vargas
+
+102	Clara	Vishney
+
+103	Shanta	Vollman
+
+104	Alana	Walsh
+
+105	Matthew	Weiss
+
+106	Jennifer	Whalen
+
+107	Eleni	Zlotkey
+
+
+
+2.select distinct DEPARTMENT_ID from employees ;
+
+
+
+  	DEPARTMENT_ID
+
+1	0
+
+2	10
+
+3	20
+
+4	30
+
+5	40
+
+6	50
+
+7	60
+
+8	70
+
+9	80
+
+10	90
+
+11	100
+
+12	110
+
+
+
+3.select *from employees order by FIRST_NAME desc ;
+
+
+
+  	EMPLOYEE_ID	FIRST_NAME	LAST_NAME	EMAIL	PHONE_NUMBER	HIRE_DATE	JOB_ID	SALARY	COMMISSION_PCT	MANAGER_ID	DEPARTMENT_ID
+
+1	180	Winston	Taylor	WTAYLOR	650.507.9876	05.09.1987 00:00:00	SH_CLERK	3200,00	0,00	120	50
+
+2	171	William	Smith	WSMITH	011.44.1343.629268	27.08.1987 00:00:00	SA_REP	7400,00	0,15	148	80
+
+3	206	William	Gietz	WGIETZ	515.123.8181	01.10.1987 00:00:00	AC_ACCOUNT	8300,00	0,00	205	110
+
+4	195	Vance	Jones	VJONES	650.501.4876	20.09.1987 00:00:00	SH_CLERK	2800,00	0,00	123	50
+
+5	106	Valli	Pataballa	VPATABAL	590.423.4560	23.06.1987 00:00:00	IT_PROG	4800,00	0,00	103	60
+
+6	141	Trenna	Rajs	TRAJS	650.121.8009	28.07.1987 00:00:00	ST_CLERK	3500,00	0,00	124	50
+
+7	132	TJ	Olson	TJOLSON	650.124.8234	19.07.1987 00:00:00	ST_CLERK	2100,00	0,00	121	50
+
+8	190	Timothy	Gates	TGATES	650.505.3876	15.09.1987 00:00:00	SH_CLERK	2900,00	0,00	122	50
+
+9	170	Tayler	Fox	TFOX	011.44.1343.729268	26.08.1987 00:00:00	SA_REP	9600,00	0,20	148	80
+
+10	203	Susan	Mavris	SMAVRIS	515.123.7777	28.09.1987 00:00:00	HR_REP	6500,00	0,00	101	40
+
+11	173	Sundita	Kumar	SKUMAR	011.44.1343.329268	29.08.1987 00:00:00	SA_REP	6100,00	0,10	148	80
+
+12	166	Sundar	Ande	SANDE	011.44.1346.629268	22.08.1987 00:00:00	SA_REP	6400,00	0,10	147	80
+
+13	100	Steven	King	SKING	515.123.4567	17.06.1987 00:00:00	AD_PRES	24000,00	0,00	0	90
+
+14	128	Steven	Markle	SMARKLE	650.124.1434	15.07.1987 00:00:00	ST_CLERK	2200,00	0,00	120	50
+
+15	138	Stephen	Stiles	SSTILES	650.121.2034	25.07.1987 00:00:00	ST_CLERK	3200,00	0,00	123	50
+
+16	117	Sigal	Tobias	STOBIAS	515.127.4564	04.07.1987 00:00:00	PU_CLERK	2800,00	0,00	114	30
+
+17	116	Shelli	Baida	SBAIDA	515.127.4563	03.07.1987 00:00:00	PU_CLERK	2900,00	0,00	114	30
+
+18	205	Shelley	Higgins	SHIGGINS	515.123.8080	30.09.1987 00:00:00	AC_MGR	12000,00	0,00	101	110
+
+19	123	Shanta	Vollman	SVOLLMAN	650.123.4234	10.07.1987 00:00:00	ST_MAN	6500,00	0,00	100	50
+
+20	161	Sarath	Sewall	SSEWALL	011.44.1345.529268	17.08.1987 00:00:00	SA_REP	7000,00	0,25	146	80
+
+21	192	Sarah	Bell	SBELL	650.501.1876	17.09.1987 00:00:00	SH_CLERK	4000,00	0,00	123	50
+
+22	194	Samuel	McCain	SMCCAIN	650.501.3876	19.09.1987 00:00:00	SH_CLERK	3200,00	0,00	123	50
+
+23	137	Renske	Ladwig	RLADWIG	650.121.1234	24.07.1987 00:00:00	ST_CLERK	3600,00	0,00	123	50
+
+24	143	Randall	Matos	RMATOS	650.121.2874	30.07.1987 00:00:00	ST_CLERK	2600,00	0,00	124	50
+
+25	191	Randall	Perkins	RPERKINS	650.505.4876	16.09.1987 00:00:00	SH_CLERK	2500,00	0,00	122	50
+
+26	144	Peter	Vargas	PVARGAS	650.121.2004	31.07.1987 00:00:00	ST_CLERK	2500,00	0,00	124	50
+
+27	150	Peter	Tucker	PTUCKER	011.44.1344.129268	06.08.1987 00:00:00	SA_REP	10000,00	0,30	145	80
+
+28	152	Peter	Hall	PHALL	011.44.1344.478968	08.08.1987 00:00:00	SA_REP	9000,00	0,25	145	80
+
+29	122	Payam	Kaufling	PKAUFLIN	650.123.3234	09.07.1987 00:00:00	ST_MAN	7900,00	0,00	100	50
+
+30	157	Patrick	Sully	PSULLY	011.44.1345.929268	13.08.1987 00:00:00	SA_REP	9500,00	0,35	146	80
+
+31	202	Pat	Fay	PFAY	603.123.6666	27.09.1987 00:00:00	MK_REP	6000,00	0,00	201	20
+
+32	155	Oliver	Tuvault	OTUVAULT	011.44.1344.486508	11.08.1987 00:00:00	SA_REP	7000,00	0,15	145	80
+
+33	101	Neena	Kochhar	NKOCHHAR	515.123.4568	18.06.1987 00:00:00	AD_VP	17000,00	0,00	100	90
+
+34	154	Nanette	Cambrault	NCAMBRAU	011.44.1344.987668	10.08.1987 00:00:00	SA_REP	7500,00	0,20	145	80
+
+35	184	Nandita	Sarchand	NSARCHAN	650.509.1876	09.09.1987 00:00:00	SH_CLERK	4200,00	0,00	121	50
+
+36	108	Nancy	Greenberg	NGREENBE	515.124.4569	25.06.1987 00:00:00	FI_MGR	12000,00	0,00	101	100
+
+37	130	Mozhe	Atkinson	MATKINSO	650.124.6234	17.07.1987 00:00:00	ST_CLERK	2800,00	0,00	121	50
+
+38	134	Michael	Rogers	MROGERS	650.127.1834	21.07.1987 00:00:00	ST_CLERK	2900,00	0,00	122	50
+
+39	201	Michael	Hartstein	MHARTSTE	515.123.5555	26.09.1987 00:00:00	MK_MAN	13000,00	0,00	100	20
+
+40	120	Matthew	Weiss	MWEISS	650.123.1234	07.07.1987 00:00:00	ST_MAN	8000,00	0,00	100	50
+
+41	164	Mattea	Marvins	MMARVINS	011.44.1346.329268	20.08.1987 00:00:00	SA_REP	7200,00	0,10	147	80
+
+42	182	Martha	Sullivan	MSULLIVA	650.507.9878	07.09.1987 00:00:00	SH_CLERK	2500,00	0,00	120	50
+
+43	113	Luis	Popp	LPOPP	515.124.4567	30.06.1987 00:00:00	FI_ACCOUNT	6900,00	0,00	108	100
+
+44	160	Louise	Doran	LDORAN	011.44.1345.629268	16.08.1987 00:00:00	SA_REP	7500,00	0,30	146	80
+
+45	168	Lisa	Ozer	LOZER	011.44.1343.929268	24.08.1987 00:00:00	SA_REP	11500,00	0,25	148	80
+
+46	159	Lindsey	Smith	LSMITH	011.44.1345.729268	15.08.1987 00:00:00	SA_REP	8000,00	0,30	146	80
+
+47	102	Lex	De Haan	LDEHAAN	515.123.4569	19.06.1987 00:00:00	AD_VP	17000,00	0,00	100	90
+
+48	129	Laura	Bissot	LBISSOT	650.124.5234	16.07.1987 00:00:00	ST_CLERK	3300,00	0,00	121	50
+
+49	178	Kimberely	Grant	KGRANT	011.44.1644.429263	03.09.1987 00:00:00	SA_REP	7000,00	0,15	149	0
+
+50	135	Ki	Gee	KGEE	650.127.1734	22.07.1987 00:00:00	ST_CLERK	2400,00	0,00	122	50
+
+51	124	Kevin	Mourgos	KMOURGOS	650.123.5234	11.07.1987 00:00:00	ST_MAN	5800,00	0,00	100	50
+
+52	197	Kevin	Feeney	KFEENEY	650.507.9822	22.09.1987 00:00:00	SH_CLERK	3000,00	0,00	124	50
+
+53	188	Kelly	Chung	KCHUNG	650.505.1876	13.09.1987 00:00:00	SH_CLERK	3800,00	0,00	122	50
+
+54	119	Karen	Colmenares	KCOLMENA	515.127.4566	06.07.1987 00:00:00	PU_CLERK	2500,00	0,00	114	30
+
+55	146	Karen	Partners	KPARTNER	011.44.1344.467268	02.08.1987 00:00:00	SA_MAN	13500,00	0,30	100	80
+
+56	125	Julia	Nayer	JNAYER	650.124.1214	12.07.1987 00:00:00	ST_CLERK	3200,00	0,00	120	50
+
+57	186	Julia	Dellinger	JDELLING	650.509.3876	11.09.1987 00:00:00	SH_CLERK	3400,00	0,00	121	50
+
+58	140	Joshua	Patel	JPATEL	650.121.1834	27.07.1987 00:00:00	ST_CLERK	2500,00	0,00	123	50
+
+59	112	Jose Manuel	Urman	JMURMAN	515.124.4469	29.06.1987 00:00:00	FI_ACCOUNT	7800,00	0,00	108	100
+
+60	176	Jonathon	Taylor	JTAYLOR	011.44.1644.429265	01.09.1987 00:00:00	SA_REP	8600,00	0,20	149	80
+
+61	110	John	Chen	JCHEN	515.124.4269	27.06.1987 00:00:00	FI_ACCOUNT	8200,00	0,00	108	100
+
+62	139	John	Seo	JSEO	650.121.2019	26.07.1987 00:00:00	ST_CLERK	2700,00	0,00	123	50
+
+63	145	John	Russell	JRUSSEL	011.44.1344.429268	01.08.1987 00:00:00	SA_MAN	14000,00	0,40	100	80
+
+64	189	Jennifer	Dilly	JDILLY	650.505.2876	14.09.1987 00:00:00	SH_CLERK	3600,00	0,00	122	50
+
+65	200	Jennifer	Whalen	JWHALEN	515.123.4444	25.09.1987 00:00:00	AD_ASST	4400,00	0,00	101	10
+
+66	181	Jean	Fleaur	JFLEAUR	650.507.9877	06.09.1987 00:00:00	SH_CLERK	3100,00	0,00	120	50
+
+67	133	Jason	Mallin	JMALLIN	650.127.1934	20.07.1987 00:00:00	ST_CLERK	3300,00	0,00	122	50
+
+68	156	Janette	King	JKING	011.44.1345.429268	12.08.1987 00:00:00	SA_REP	10000,00	0,35	146	80
+
+69	127	James	Landry	JLANDRY	650.124.1334	14.07.1987 00:00:00	ST_CLERK	2400,00	0,00	120	50
+
+70	131	James	Marlow	JAMRLOW	650.124.7234	18.07.1987 00:00:00	ST_CLERK	2500,00	0,00	121	50
+
+71	177	Jack	Livingston	JLIVINGS	011.44.1644.429264	02.09.1987 00:00:00	SA_REP	8400,00	0,20	149	80
+
+72	111	Ismael	Sciarra	ISCIARRA	515.124.4369	28.06.1987 00:00:00	FI_ACCOUNT	7700,00	0,00	108	100
+
+73	126	Irene	Mikkilineni	IMIKKILI	650.124.1224	13.07.1987 00:00:00	ST_CLERK	2700,00	0,00	120	50
+
+74	204	Hermann	Baer	HBAER	515.123.8888	29.09.1987 00:00:00	PR_REP	10000,00	0,00	101	70
+
+75	136	Hazel	Philtanker	HPHILTAN	650.127.1634	23.07.1987 00:00:00	ST_CLERK	2200,00	0,00	122	50
+
+76	169	Harrison	Bloom	HBLOOM	011.44.1343.829268	25.08.1987 00:00:00	SA_REP	10000,00	0,20	148	80
+
+77	118	Guy	Himuro	GHIMURO	515.127.4565	05.07.1987 00:00:00	PU_CLERK	2600,00	0,00	114	30
+
+78	183	Girard	Geoni	GGEONI	650.507.9879	08.09.1987 00:00:00	SH_CLERK	2800,00	0,00	120	50
+
+79	148	Gerald	Cambrault	GCAMBRAU	011.44.1344.619268	04.08.1987 00:00:00	SA_MAN	11000,00	0,30	100	80
+
+80	174	Ellen	Abel	EABEL	011.44.1644.429267	30.08.1987 00:00:00	SA_REP	11000,00	0,30	149	80
+
+81	172	Elizabeth	Bates	EBATES	011.44.1343.529268	28.08.1987 00:00:00	SA_REP	7300,00	0,15	148	80
+
+82	149	Eleni	Zlotkey	EZLOTKEY	011.44.1344.429018	05.08.1987 00:00:00	SA_MAN	10500,00	0,20	100	80
+
+83	199	Douglas	Grant	DGRANT	650.507.9844	24.09.1987 00:00:00	SH_CLERK	2600,00	0,00	124	50
+
+84	198	Donald	OConnell	DOCONNEL	650.507.9833	23.09.1987 00:00:00	SH_CLERK	2600,00	0,00	124	50
+
+85	107	Diana	Lorentz	DLORENTZ	590.423.5567	24.06.1987 00:00:00	IT_PROG	4200,00	0,00	103	60
+
+86	114	Den	Raphaely	DRAPHEAL	515.127.4561	01.07.1987 00:00:00	PU_MAN	11000,00	0,00	100	30
+
+87	105	David	Austin	DAUSTIN	590.423.4569	22.06.1987 00:00:00	IT_PROG	4800,00	0,00	103	60
+
+88	151	David	Bernstein	DBERNSTE	011.44.1344.345268	07.08.1987 00:00:00	SA_REP	9500,00	0,25	145	80
+
+89	165	David	Lee	DLEE	011.44.1346.529268	21.08.1987 00:00:00	SA_REP	6800,00	0,10	147	80
+
+90	163	Danielle	Greene	DGREENE	011.44.1346.229268	19.08.1987 00:00:00	SA_REP	9500,00	0,15	147	80
+
+91	109	Daniel	Faviet	DFAVIET	515.124.4169	26.06.1987 00:00:00	FI_ACCOUNT	9000,00	0,00	108	100
+
+92	142	Curtis	Davies	CDAVIES	650.121.2994	29.07.1987 00:00:00	ST_CLERK	3100,00	0,00	124	50
+
+93	162	Clara	Vishney	CVISHNEY	011.44.1346.129268	18.08.1987 00:00:00	SA_REP	10500,00	0,25	147	80
+
+94	153	Christopher	Olsen	COLSEN	011.44.1344.498718	09.08.1987 00:00:00	SA_REP	8000,00	0,20	145	80
+
+95	179	Charles	Johnson	CJOHNSON	011.44.1644.429262	04.09.1987 00:00:00	SA_REP	6200,00	0,10	149	80
+
+96	104	Bruce	Ernst	BERNST	590.423.4568	21.06.1987 00:00:00	IT_PROG	6000,00	0,00	103	60
+
+97	193	Britney	Everett	BEVERETT	650.501.2876	18.09.1987 00:00:00	SH_CLERK	3900,00	0,00	123	50
+
+98	187	Anthony	Cabrio	ACABRIO	650.509.4876	12.09.1987 00:00:00	SH_CLERK	3000,00	0,00	121	50
+
+99	167	Amit	Banda	ABANDA	011.44.1346.729268	23.08.1987 00:00:00	SA_REP	6200,00	0,10	147	80
+
+100	175	Alyssa	Hutton	AHUTTON	011.44.1644.429266	31.08.1987 00:00:00	SA_REP	8800,00	0,25	149	80
+
+101	158	Allan	McEwen	AMCEWEN	011.44.1345.829268	14.08.1987 00:00:00	SA_REP	9000,00	0,35	146	80
+
+102	185	Alexis	Bull	ABULL	650.509.2876	10.09.1987 00:00:00	SH_CLERK	4100,00	0,00	121	50
+
+103	103	Alexander	Hunold	AHUNOLD	590.423.4567	20.06.1987 00:00:00	IT_PROG	9000,00	0,00	102	60
+
+104	115	Alexander	Khoo	AKHOO	515.127.4562	02.07.1987 00:00:00	PU_CLERK	3100,00	0,00	114	30
+
+105	147	Alberto	Errazuriz	AERRAZUR	011.44.1344.429278	03.08.1987 00:00:00	SA_MAN	12000,00	0,30	100	80
+
+106	196	Alana	Walsh	AWALSH	650.507.9811	21.09.1987 00:00:00	SH_CLERK	3100,00	0,00	124	50
+
+107	121	Adam	Fripp	AFRIPP	650.123.2234	08.07.1987 00:00:00	ST_MAN	8200,00	0,00	100	50
+
+
+
+4.select FIRST_NAME,LAST_NAME,SALARY,0.15*SALARY as PF from employees;
+
+
+
+  	FIRST_NAME	LAST_NAME	SALARY	PF
+
+1	Steven	King	24000,00	3600,0000
+
+2	Neena	Kochhar	17000,00	2550,0000
+
+3	Lex	De Haan	17000,00	2550,0000
+
+4	Alexander	Hunold	9000,00	1350,0000
+
+5	Bruce	Ernst	6000,00	900,0000
+
+6	David	Austin	4800,00	720,0000
+
+7	Valli	Pataballa	4800,00	720,0000
+
+8	Diana	Lorentz	4200,00	630,0000
+
+9	Nancy	Greenberg	12000,00	1800,0000
+
+10	Daniel	Faviet	9000,00	1350,0000
+
+11	John	Chen	8200,00	1230,0000
+
+12	Ismael	Sciarra	7700,00	1155,0000
+
+13	Jose Manuel	Urman	7800,00	1170,0000
+
+14	Luis	Popp	6900,00	1035,0000
+
+15	Den	Raphaely	11000,00	1650,0000
+
+16	Alexander	Khoo	3100,00	465,0000
+
+17	Shelli	Baida	2900,00	435,0000
+
+18	Sigal	Tobias	2800,00	420,0000
+
+19	Guy	Himuro	2600,00	390,0000
+
+20	Karen	Colmenares	2500,00	375,0000
+
+21	Matthew	Weiss	8000,00	1200,0000
+
+22	Adam	Fripp	8200,00	1230,0000
+
+23	Payam	Kaufling	7900,00	1185,0000
+
+24	Shanta	Vollman	6500,00	975,0000
+
+25	Kevin	Mourgos	5800,00	870,0000
+
+26	Julia	Nayer	3200,00	480,0000
+
+27	Irene	Mikkilineni	2700,00	405,0000
+
+28	James	Landry	2400,00	360,0000
+
+29	Steven	Markle	2200,00	330,0000
+
+30	Laura	Bissot	3300,00	495,0000
+
+31	Mozhe	Atkinson	2800,00	420,0000
+
+32	James	Marlow	2500,00	375,0000
+
+33	TJ	Olson	2100,00	315,0000
+
+34	Jason	Mallin	3300,00	495,0000
+
+35	Michael	Rogers	2900,00	435,0000
+
+36	Ki	Gee	2400,00	360,0000
+
+37	Hazel	Philtanker	2200,00	330,0000
+
+38	Renske	Ladwig	3600,00	540,0000
+
+39	Stephen	Stiles	3200,00	480,0000
+
+40	John	Seo	2700,00	405,0000
+
+41	Joshua	Patel	2500,00	375,0000
+
+42	Trenna	Rajs	3500,00	525,0000
+
+43	Curtis	Davies	3100,00	465,0000
+
+44	Randall	Matos	2600,00	390,0000
+
+45	Peter	Vargas	2500,00	375,0000
+
+46	John	Russell	14000,00	2100,0000
+
+47	Karen	Partners	13500,00	2025,0000
+
+48	Alberto	Errazuriz	12000,00	1800,0000
+
+49	Gerald	Cambrault	11000,00	1650,0000
+
+50	Eleni	Zlotkey	10500,00	1575,0000
+
+51	Peter	Tucker	10000,00	1500,0000
+
+52	David	Bernstein	9500,00	1425,0000
+
+53	Peter	Hall	9000,00	1350,0000
+
+54	Christopher	Olsen	8000,00	1200,0000
+
+55	Nanette	Cambrault	7500,00	1125,0000
+
+56	Oliver	Tuvault	7000,00	1050,0000
+
+57	Janette	King	10000,00	1500,0000
+
+58	Patrick	Sully	9500,00	1425,0000
+
+59	Allan	McEwen	9000,00	1350,0000
+
+60	Lindsey	Smith	8000,00	1200,0000
+
+61	Louise	Doran	7500,00	1125,0000
+
+62	Sarath	Sewall	7000,00	1050,0000
+
+63	Clara	Vishney	10500,00	1575,0000
+
+64	Danielle	Greene	9500,00	1425,0000
+
+65	Mattea	Marvins	7200,00	1080,0000
+
+66	David	Lee	6800,00	1020,0000
+
+67	Sundar	Ande	6400,00	960,0000
+
+68	Amit	Banda	6200,00	930,0000
+
+69	Lisa	Ozer	11500,00	1725,0000
+
+70	Harrison	Bloom	10000,00	1500,0000
+
+71	Tayler	Fox	9600,00	1440,0000
+
+72	William	Smith	7400,00	1110,0000
+
+73	Elizabeth	Bates	7300,00	1095,0000
+
+74	Sundita	Kumar	6100,00	915,0000
+
+75	Ellen	Abel	11000,00	1650,0000
+
+76	Alyssa	Hutton	8800,00	1320,0000
+
+77	Jonathon	Taylor	8600,00	1290,0000
+
+78	Jack	Livingston	8400,00	1260,0000
+
+79	Kimberely	Grant	7000,00	1050,0000
+
+80	Charles	Johnson	6200,00	930,0000
+
+81	Winston	Taylor	3200,00	480,0000
+
+82	Jean	Fleaur	3100,00	465,0000
+
+83	Martha	Sullivan	2500,00	375,0000
+
+84	Girard	Geoni	2800,00	420,0000
+
+85	Nandita	Sarchand	4200,00	630,0000
+
+86	Alexis	Bull	4100,00	615,0000
+
+87	Julia	Dellinger	3400,00	510,0000
+
+88	Anthony	Cabrio	3000,00	450,0000
+
+89	Kelly	Chung	3800,00	570,0000
+
+90	Jennifer	Dilly	3600,00	540,0000
+
+91	Timothy	Gates	2900,00	435,0000
+
+92	Randall	Perkins	2500,00	375,0000
+
+93	Sarah	Bell	4000,00	600,0000
+
+94	Britney	Everett	3900,00	585,0000
+
+95	Samuel	McCain	3200,00	480,0000
+
+96	Vance	Jones	2800,00	420,0000
+
+97	Alana	Walsh	3100,00	465,0000
+
+98	Kevin	Feeney	3000,00	450,0000
+
+99	Donald	OConnell	2600,00	390,0000
+
+100	Douglas	Grant	2600,00	390,0000
+
+101	Jennifer	Whalen	4400,00	660,0000
+
+102	Michael	Hartstein	13000,00	1950,0000
+
+103	Pat	Fay	6000,00	900,0000
+
+104	Susan	Mavris	6500,00	975,0000
+
+105	Hermann	Baer	10000,00	1500,0000
+
+106	Shelley	Higgins	12000,00	1800,0000
+
+107	William	Gietz	8300,00	1245,0000
+
+
+
+5.select EMPLOYEE_ID,FIRST_NAME,LAST_NAME,SALARY from employees order by salary asc;
+
+
+
+  	EMPLOYEE_ID	FIRST_NAME	LAST_NAME	SALARY
+
+1	132	TJ	Olson	2100,00
+
+2	128	Steven	Markle	2200,00
+
+3	136	Hazel	Philtanker	2200,00
+
+4	127	James	Landry	2400,00
+
+5	135	Ki	Gee	2400,00
+
+6	119	Karen	Colmenares	2500,00
+
+7	131	James	Marlow	2500,00
+
+8	140	Joshua	Patel	2500,00
+
+9	144	Peter	Vargas	2500,00
+
+10	182	Martha	Sullivan	2500,00
+
+11	191	Randall	Perkins	2500,00
+
+12	118	Guy	Himuro	2600,00
+
+13	143	Randall	Matos	2600,00
+
+14	198	Donald	OConnell	2600,00
+
+15	199	Douglas	Grant	2600,00
+
+16	126	Irene	Mikkilineni	2700,00
+
+17	139	John	Seo	2700,00
+
+18	117	Sigal	Tobias	2800,00
+
+19	130	Mozhe	Atkinson	2800,00
+
+20	183	Girard	Geoni	2800,00
+
+21	195	Vance	Jones	2800,00
+
+22	116	Shelli	Baida	2900,00
+
+23	134	Michael	Rogers	2900,00
+
+24	190	Timothy	Gates	2900,00
+
+25	187	Anthony	Cabrio	3000,00
+
+26	197	Kevin	Feeney	3000,00
+
+27	115	Alexander	Khoo	3100,00
+
+28	142	Curtis	Davies	3100,00
+
+29	181	Jean	Fleaur	3100,00
+
+30	196	Alana	Walsh	3100,00
+
+31	125	Julia	Nayer	3200,00
+
+32	138	Stephen	Stiles	3200,00
+
+33	180	Winston	Taylor	3200,00
+
+34	194	Samuel	McCain	3200,00
+
+35	129	Laura	Bissot	3300,00
+
+36	133	Jason	Mallin	3300,00
+
+37	186	Julia	Dellinger	3400,00
+
+38	141	Trenna	Rajs	3500,00
+
+39	137	Renske	Ladwig	3600,00
+
+40	189	Jennifer	Dilly	3600,00
+
+41	188	Kelly	Chung	3800,00
+
+42	193	Britney	Everett	3900,00
+
+43	192	Sarah	Bell	4000,00
+
+44	185	Alexis	Bull	4100,00
+
+45	107	Diana	Lorentz	4200,00
+
+46	184	Nandita	Sarchand	4200,00
+
+47	200	Jennifer	Whalen	4400,00
+
+48	105	David	Austin	4800,00
+
+49	106	Valli	Pataballa	4800,00
+
+50	124	Kevin	Mourgos	5800,00
+
+51	104	Bruce	Ernst	6000,00
+
+52	202	Pat	Fay	6000,00
+
+53	173	Sundita	Kumar	6100,00
+
+54	167	Amit	Banda	6200,00
+
+55	179	Charles	Johnson	6200,00
+
+56	166	Sundar	Ande	6400,00
+
+57	123	Shanta	Vollman	6500,00
+
+58	203	Susan	Mavris	6500,00
+
+59	165	David	Lee	6800,00
+
+60	113	Luis	Popp	6900,00
+
+61	155	Oliver	Tuvault	7000,00
+
+62	161	Sarath	Sewall	7000,00
+
+63	178	Kimberely	Grant	7000,00
+
+64	164	Mattea	Marvins	7200,00
+
+65	172	Elizabeth	Bates	7300,00
+
+66	171	William	Smith	7400,00
+
+67	154	Nanette	Cambrault	7500,00
+
+68	160	Louise	Doran	7500,00
+
+69	111	Ismael	Sciarra	7700,00
+
+70	112	Jose Manuel	Urman	7800,00
+
+71	122	Payam	Kaufling	7900,00
+
+72	120	Matthew	Weiss	8000,00
+
+73	153	Christopher	Olsen	8000,00
+
+74	159	Lindsey	Smith	8000,00
+
+75	110	John	Chen	8200,00
+
+76	121	Adam	Fripp	8200,00
+
+77	206	William	Gietz	8300,00
+
+78	177	Jack	Livingston	8400,00
+
+79	176	Jonathon	Taylor	8600,00
+
+80	175	Alyssa	Hutton	8800,00
+
+81	103	Alexander	Hunold	9000,00
+
+82	109	Daniel	Faviet	9000,00
+
+83	152	Peter	Hall	9000,00
+
+84	158	Allan	McEwen	9000,00
+
+85	151	David	Bernstein	9500,00
+
+86	157	Patrick	Sully	9500,00
+
+87	163	Danielle	Greene	9500,00
+
+88	170	Tayler	Fox	9600,00
+
+89	150	Peter	Tucker	10000,00
+
+90	156	Janette	King	10000,00
+
+91	169	Harrison	Bloom	10000,00
+
+92	204	Hermann	Baer	10000,00
+
+93	149	Eleni	Zlotkey	10500,00
+
+94	162	Clara	Vishney	10500,00
+
+95	114	Den	Raphaely	11000,00
+
+96	148	Gerald	Cambrault	11000,00
+
+97	174	Ellen	Abel	11000,00
+
+98	168	Lisa	Ozer	11500,00
+
+99	108	Nancy	Greenberg	12000,00
+
+100	147	Alberto	Errazuriz	12000,00
+
+101	205	Shelley	Higgins	12000,00
+
+102	201	Michael	Hartstein	13000,00
+
+103	146	Karen	Partners	13500,00
+
+104	145	John	Russell	14000,00
+
+105	101	Neena	Kochhar	17000,00
+
+106	102	Lex	De Haan	17000,00
+
+107	100	Steven	King	24000,00
+
+
+
+select sum(SALARY) as "total salaries" from employees;
+
+
+
+  	total salaries
+
+1	691400,00
+
+
+
+select max(SALARY) as "maximum salary",min(SALARY) as "minimum salary" from employees;
+
+
+
+  	maximum salary	minimum salary
+
+1	24000,00	2100,00
+
+
+
+select avg(SALARY) as "average salary",count(EMPLOYEE_ID) as "number of employees" from employees;
+
+
+
+  	average salary	number of employees
+
+1	6461,682243	107
+
+
+
+select  count(EMPLOYEE_ID) as "number of employees" from employees;
+
+
+
+  	number of employees
+
+1	107
+
+
+
+select  count(JOB_ID) as "number of jobs" from employees;
+
+
+
+  	number of jobs
+
+1	107
+
+
+
+select  count(distinct JOB_ID) as "number of jobs" from employees;
+
+
+
+  	number of jobs
+
+1	19
+
+
+
+select  LEFT(FIRST_NAME,3) AS "first 3 characters of first name" from employees;
+
+
+
+
+
+  	first 3 characters of first name
+
+1	Ell
+
+2	Sun
+
+3	Moz
+
+4	Dav
+
+5	Her
+
+6	She
+
+7	Ami
+
+8	Eli
+
+9	Sar
+
+10	Dav
+
+11	Lau
+
+12	Har
+
+13	Ale
+
+14	Ant
+
+15	Ger
+
+16	Nan
+
+17	Joh
+
+18	Kel
+
+19	Kar
+
+20	Cur
+
+21	Lex
+
+22	Jul
+
+23	Jen
+
+24	Lou
+
+25	Bru
+
+26	Alb
+
+27	Bri
+
+28	Dan
+
+29	Pat
+
+30	Kev
+
+31	Jea
+
+32	Tay
+
+33	Ada
+
+34	Tim
+
+35	Ki
+
+36	Gir
+
+37	Wil
+
+38	Dou
+
+39	Kim
+
+40	Nan
+
+41	Dan
+
+42	Pet
+
+43	Mic
+
+44	She
+
+45	Guy
+
+46	Ale
+
+47	Aly
+
+48	Cha
+
+49	Van
+
+50	Pay
+
+51	Ale
+
+52	Jan
+
+53	Ste
+
+54	Nee
+
+55	Sun
+
+56	Ren
+
+57	Jam
+
+58	Dav
+
+59	Jac
+
+60	Dia
+
+61	Jas
+
+62	Ste
+
+63	Jam
+
+64	Mat
+
+65	Ran
+
+66	Sus
+
+67	Sam
+
+68	All
+
+69	Ire
+
+70	Kev
+
+71	Jul
+
+72	Don
+
+73	Chr
+
+74	TJ
+
+75	Lis
+
+76	Kar
+
+77	Val
+
+78	Jos
+
+79	Ran
+
+80	Haz
+
+81	Lui
+
+82	Tre
+
+83	Den
+
+84	Mic
+
+85	Joh
+
+86	Nan
+
+87	Ism
+
+88	Joh
+
+89	Sar
+
+90	Lin
+
+91	Wil
+
+92	Ste
+
+93	Mar
+
+94	Pat
+
+95	Jon
+
+96	Win
+
+97	Sig
+
+98	Pet
+
+99	Oli
+
+100	Jos
+
+101	Pet
+
+102	Cla
+
+103	Sha
+
+104	Ala
+
+105	Mat
+
+106	Jen
+
+107	Ele
+
+
+
+select * FROM employees limit 10;
+
+
+
+  	EMPLOYEE_ID	FIRST_NAME	LAST_NAME	EMAIL	PHONE_NUMBER	HIRE_DATE	JOB_ID	SALARY	COMMISSION_PCT	MANAGER_ID	DEPARTMENT_ID
+
+1	100	Steven	King	SKING	515.123.4567	17.06.1987 00:00:00	AD_PRES	24000,00	0,00	0	90
+
+2	101	Neena	Kochhar	NKOCHHAR	515.123.4568	18.06.1987 00:00:00	AD_VP	17000,00	0,00	100	90
+
+3	102	Lex	De Haan	LDEHAAN	515.123.4569	19.06.1987 00:00:00	AD_VP	17000,00	0,00	100	90
+
+4	103	Alexander	Hunold	AHUNOLD	590.423.4567	20.06.1987 00:00:00	IT_PROG	9000,00	0,00	102	60
+
+5	104	Bruce	Ernst	BERNST	590.423.4568	21.06.1987 00:00:00	IT_PROG	6000,00	0,00	103	60
+
+6	105	David	Austin	DAUSTIN	590.423.4569	22.06.1987 00:00:00	IT_PROG	4800,00	0,00	103	60
+
+7	106	Valli	Pataballa	VPATABAL	590.423.4560	23.06.1987 00:00:00	IT_PROG	4800,00	0,00	103	60
+
+8	107	Diana	Lorentz	DLORENTZ	590.423.5567	24.06.1987 00:00:00	IT_PROG	4200,00	0,00	103	60
+
+9	108	Nancy	Greenberg	NGREENBE	515.124.4569	25.06.1987 00:00:00	FI_MGR	12000,00	0,00	101	100
+
+10	109	Daniel	Faviet	DFAVIET	515.124.4169	26.06.1987 00:00:00	FI_ACCOUNT	9000,00	0,00	108	100
+
+
+
+
+
+select FIRST_NAME,LAST_NAME,SALARY FROM employees WHERE SALARY NOT BETWEEN 10000 AND 15000;
+
+
+
+  	FIRST_NAME	LAST_NAME	SALARY
+
+1	Steven	King	24000,00
+
+2	Neena	Kochhar	17000,00
+
+3	Lex	De Haan	17000,00
+
+4	Alexander	Hunold	9000,00
+
+5	Bruce	Ernst	6000,00
+
+6	David	Austin	4800,00
+
+7	Valli	Pataballa	4800,00
+
+8	Diana	Lorentz	4200,00
+
+9	Daniel	Faviet	9000,00
+
+10	John	Chen	8200,00
+
+11	Ismael	Sciarra	7700,00
+
+12	Jose Manuel	Urman	7800,00
+
+13	Luis	Popp	6900,00
+
+14	Alexander	Khoo	3100,00
+
+15	Shelli	Baida	2900,00
+
+16	Sigal	Tobias	2800,00
+
+17	Guy	Himuro	2600,00
+
+18	Karen	Colmenares	2500,00
+
+19	Matthew	Weiss	8000,00
+
+20	Adam	Fripp	8200,00
+
+21	Payam	Kaufling	7900,00
+
+22	Shanta	Vollman	6500,00
+
+23	Kevin	Mourgos	5800,00
+
+24	Julia	Nayer	3200,00
+
+25	Irene	Mikkilineni	2700,00
+
+26	James	Landry	2400,00
+
+27	Steven	Markle	2200,00
+
+28	Laura	Bissot	3300,00
+
+29	Mozhe	Atkinson	2800,00
+
+30	James	Marlow	2500,00
+
+31	TJ	Olson	2100,00
+
+32	Jason	Mallin	3300,00
+
+33	Michael	Rogers	2900,00
+
+34	Ki	Gee	2400,00
+
+35	Hazel	Philtanker	2200,00
+
+36	Renske	Ladwig	3600,00
+
+37	Stephen	Stiles	3200,00
+
+38	John	Seo	2700,00
+
+39	Joshua	Patel	2500,00
+
+40	Trenna	Rajs	3500,00
+
+41	Curtis	Davies	3100,00
+
+42	Randall	Matos	2600,00
+
+43	Peter	Vargas	2500,00
+
+44	David	Bernstein	9500,00
+
+45	Peter	Hall	9000,00
+
+46	Christopher	Olsen	8000,00
+
+47	Nanette	Cambrault	7500,00
+
+48	Oliver	Tuvault	7000,00
+
+49	Patrick	Sully	9500,00
+
+50	Allan	McEwen	9000,00
+
+51	Lindsey	Smith	8000,00
+
+52	Louise	Doran	7500,00
+
+53	Sarath	Sewall	7000,00
+
+54	Danielle	Greene	9500,00
+
+55	Mattea	Marvins	7200,00
+
+56	David	Lee	6800,00
+
+57	Sundar	Ande	6400,00
+
+58	Amit	Banda	6200,00
+
+59	Tayler	Fox	9600,00
+
+60	William	Smith	7400,00
+
+61	Elizabeth	Bates	7300,00
+
+62	Sundita	Kumar	6100,00
+
+63	Alyssa	Hutton	8800,00
+
+64	Jonathon	Taylor	8600,00
+
+65	Jack	Livingston	8400,00
+
+66	Kimberely	Grant	7000,00
+
+67	Charles	Johnson	6200,00
+
+68	Winston	Taylor	3200,00
+
+69	Jean	Fleaur	3100,00
+
+70	Martha	Sullivan	2500,00
+
+71	Girard	Geoni	2800,00
+
+72	Nandita	Sarchand	4200,00
+
+73	Alexis	Bull	4100,00
+
+74	Julia	Dellinger	3400,00
+
+75	Anthony	Cabrio	3000,00
+
+76	Kelly	Chung	3800,00
+
+77	Jennifer	Dilly	3600,00
+
+78	Timothy	Gates	2900,00
+
+79	Randall	Perkins	2500,00
+
+80	Sarah	Bell	4000,00
+
+81	Britney	Everett	3900,00
+
+82	Samuel	McCain	3200,00
+
+83	Vance	Jones	2800,00
+
+84	Alana	Walsh	3100,00
+
+85	Kevin	Feeney	3000,00
+
+86	Donald	OConnell	2600,00
+
+87	Douglas	Grant	2600,00
+
+88	Jennifer	Whalen	4400,00
+
+89	Pat	Fay	6000,00
+
+90	Susan	Mavris	6500,00
+
+91	William	Gietz	8300,00
+
+
+
+select FIRST_NAME FROM employees WHERE FIRST_NAME LIKE "%b%" and  FIRST_NAME LIKE "%c%";
+
+
+
+  	FIRST_NAME
+
+1	Bruce
+
+
+
+select LAST_NAME FROM employees WHERE LAST_NAME LIKE "__e";
+
+
+
+
+
+  	LAST_NAME
+
+1	Gee
+
+2	Lee
+
+
+
+select LAST_NAME FROM employees where LAST_NAME IN ('BLAKE', 'SCOTT', 'KING','FORD');
+
+
+
+
+
+  	LAST_NAME
+
+1	King
+
+2	King
+
+
+
+select SUM(SALARY) AS "total salaries payable to employees" FROM employees;
+
+
+
+
+
+  	total salaries payable to employees
+
+1	691400,00
+
+
+
+select MAX(salary) AS "maximum salary of an employee working as a Programmer" FROM employees where JOB_ID="IT_PROG";
+
+
+
+  	maximum salary of an employee working as a Programmer
+
+1	9000,00
+
+
+
+select AVG(SALARY) AS "AVERAGE SALARY",COUNT(DEPARTMENT_ID) AS " number of employees working the department 90" FROM employees WHERE DEPARTMENT_ID=90;
+
+
+
+  	AVERAGE SALARY	number of employees working the department 90
+
+1	19333,333333	3
+
+
+
+select MAX(SALARY) AS "highest salary",MIN(SALARY) AS "lowest salary",sum(SALARY) AS "total  salary",avg(SALARY) AS "average salary" from employees;
+
+
+
+  	highest salary	lowest salary	total  salary	average salary
+
+1	24000,00	2100,00	691400,00	6461,682243
+
+
+
+select MAX(SALARY)-MIN(SALARY) AS "difference between the highest and lowest salaries" from employees;
+
+
+
+  	difference between the highest and lowest salaries
+
+1	21900,00
+
+
+
+update employees set EMAIL=CONCAT(EMAIL,"@example.com");
+
+select *from employees;
+
+
+
+
+
+  	EMPLOYEE_ID	FIRST_NAME	LAST_NAME	EMAIL	PHONE_NUMBER	HIRE_DATE	JOB_ID	SALARY	COMMISSION_PCT	MANAGER_ID	DEPARTMENT_ID
+
+1	100	Steven	King	SKING@example.com	515.123.4567	17.06.1987 00:00:00	AD_PRES	24000,00	0,00	0	90
+
+2	101	Neena	Kochhar	NKOCHHAR@example.com	515.123.4568	18.06.1987 00:00:00	AD_VP	17000,00	0,00	100	90
+
+3	102	Lex	De Haan	LDEHAAN@example.com	515.123.4569	19.06.1987 00:00:00	AD_VP	17000,00	0,00	100	90
+
+4	103	Alexander	Hunold	AHUNOLD@example.com	590.423.4567	20.06.1987 00:00:00	IT_PROG	9000,00	0,00	102	60
+
+5	104	Bruce	Ernst	BERNST@example.com	590.423.4568	21.06.1987 00:00:00	IT_PROG	6000,00	0,00	103	60
+
+6	105	David	Austin	DAUSTIN@example.com	590.423.4569	22.06.1987 00:00:00	IT_PROG	4800,00	0,00	103	60
+
+7	106	Valli	Pataballa	VPATABAL@example.com	590.423.4560	23.06.1987 00:00:00	IT_PROG	4800,00	0,00	103	60
+
+8	107	Diana	Lorentz	DLORENTZ@example.com	590.423.5567	24.06.1987 00:00:00	IT_PROG	4200,00	0,00	103	60
+
+9	108	Nancy	Greenberg	NGREENBE@example.com	515.124.4569	25.06.1987 00:00:00	FI_MGR	12000,00	0,00	101	100
+
+10	109	Daniel	Faviet	DFAVIET@example.com	515.124.4169	26.06.1987 00:00:00	FI_ACCOUNT	9000,00	0,00	108	100
+
+11	110	John	Chen	JCHEN@example.com	515.124.4269	27.06.1987 00:00:00	FI_ACCOUNT	8200,00	0,00	108	100
+
+12	111	Ismael	Sciarra	ISCIARRA@example.com	515.124.4369	28.06.1987 00:00:00	FI_ACCOUNT	7700,00	0,00	108	100
+
+13	112	Jose Manuel	Urman	JMURMAN@example.com	515.124.4469	29.06.1987 00:00:00	FI_ACCOUNT	7800,00	0,00	108	100
+
+14	113	Luis	Popp	LPOPP@example.com	515.124.4567	30.06.1987 00:00:00	FI_ACCOUNT	6900,00	0,00	108	100
+
+15	114	Den	Raphaely	DRAPHEAL@example.com	515.127.4561	01.07.1987 00:00:00	PU_MAN	11000,00	0,00	100	30
+
+16	115	Alexander	Khoo	AKHOO@example.com	515.127.4562	02.07.1987 00:00:00	PU_CLERK	3100,00	0,00	114	30
+
+17	116	Shelli	Baida	SBAIDA@example.com	515.127.4563	03.07.1987 00:00:00	PU_CLERK	2900,00	0,00	114	30
+
+18	117	Sigal	Tobias	STOBIAS@example.com	515.127.4564	04.07.1987 00:00:00	PU_CLERK	2800,00	0,00	114	30
+
+19	118	Guy	Himuro	GHIMURO@example.com	515.127.4565	05.07.1987 00:00:00	PU_CLERK	2600,00	0,00	114	30
+
+20	119	Karen	Colmenares	KCOLMENA@example.com	515.127.4566	06.07.1987 00:00:00	PU_CLERK	2500,00	0,00	114	30
+
+21	120	Matthew	Weiss	MWEISS@example.com	650.123.1234	07.07.1987 00:00:00	ST_MAN	8000,00	0,00	100	50
+
+22	121	Adam	Fripp	AFRIPP@example.com	650.123.2234	08.07.1987 00:00:00	ST_MAN	8200,00	0,00	100	50
+
+23	122	Payam	Kaufling	PKAUFLIN@example.com	650.123.3234	09.07.1987 00:00:00	ST_MAN	7900,00	0,00	100	50
+
+24	123	Shanta	Vollman	SVOLLMAN@example.com	650.123.4234	10.07.1987 00:00:00	ST_MAN	6500,00	0,00	100	50
+
+25	124	Kevin	Mourgos	KMOURGOS@example.com	650.123.5234	11.07.1987 00:00:00	ST_MAN	5800,00	0,00	100	50
+
+26	125	Julia	Nayer	JNAYER@example.com	650.124.1214	12.07.1987 00:00:00	ST_CLERK	3200,00	0,00	120	50
+
+27	126	Irene	Mikkilineni	IMIKKILI@example.com	650.124.1224	13.07.1987 00:00:00	ST_CLERK	2700,00	0,00	120	50
+
+28	127	James	Landry	JLANDRY@example.com	650.124.1334	14.07.1987 00:00:00	ST_CLERK	2400,00	0,00	120	50
+
+29	128	Steven	Markle	SMARKLE@example.com	650.124.1434	15.07.1987 00:00:00	ST_CLERK	2200,00	0,00	120	50
+
+30	129	Laura	Bissot	LBISSOT@example.com	650.124.5234	16.07.1987 00:00:00	ST_CLERK	3300,00	0,00	121	50
+
+31	130	Mozhe	Atkinson	MATKINSO@example.com	650.124.6234	17.07.1987 00:00:00	ST_CLERK	2800,00	0,00	121	50
+
+32	131	James	Marlow	JAMRLOW@example.com	650.124.7234	18.07.1987 00:00:00	ST_CLERK	2500,00	0,00	121	50
+
+33	132	TJ	Olson	TJOLSON@example.com	650.124.8234	19.07.1987 00:00:00	ST_CLERK	2100,00	0,00	121	50
+
+34	133	Jason	Mallin	JMALLIN@example.com	650.127.1934	20.07.1987 00:00:00	ST_CLERK	3300,00	0,00	122	50
+
+35	134	Michael	Rogers	MROGERS@example.com	650.127.1834	21.07.1987 00:00:00	ST_CLERK	2900,00	0,00	122	50
+
+36	135	Ki	Gee	KGEE@example.com	650.127.1734	22.07.1987 00:00:00	ST_CLERK	2400,00	0,00	122	50
+
+37	136	Hazel	Philtanker	HPHILTAN@example.com	650.127.1634	23.07.1987 00:00:00	ST_CLERK	2200,00	0,00	122	50
+
+38	137	Renske	Ladwig	RLADWIG@example.com	650.121.1234	24.07.1987 00:00:00	ST_CLERK	3600,00	0,00	123	50
+
+39	138	Stephen	Stiles	SSTILES@example.com	650.121.2034	25.07.1987 00:00:00	ST_CLERK	3200,00	0,00	123	50
+
+40	139	John	Seo	JSEO@example.com	650.121.2019	26.07.1987 00:00:00	ST_CLERK	2700,00	0,00	123	50
+
+41	140	Joshua	Patel	JPATEL@example.com	650.121.1834	27.07.1987 00:00:00	ST_CLERK	2500,00	0,00	123	50
+
+42	141	Trenna	Rajs	TRAJS@example.com	650.121.8009	28.07.1987 00:00:00	ST_CLERK	3500,00	0,00	124	50
+
+43	142	Curtis	Davies	CDAVIES@example.com	650.121.2994	29.07.1987 00:00:00	ST_CLERK	3100,00	0,00	124	50
+
+44	143	Randall	Matos	RMATOS@example.com	650.121.2874	30.07.1987 00:00:00	ST_CLERK	2600,00	0,00	124	50
+
+45	144	Peter	Vargas	PVARGAS@example.com	650.121.2004	31.07.1987 00:00:00	ST_CLERK	2500,00	0,00	124	50
+
+46	145	John	Russell	JRUSSEL@example.com	011.44.1344.429268	01.08.1987 00:00:00	SA_MAN	14000,00	0,40	100	80
+
+47	146	Karen	Partners	KPARTNER@example.com	011.44.1344.467268	02.08.1987 00:00:00	SA_MAN	13500,00	0,30	100	80
+
+48	147	Alberto	Errazuriz	AERRAZUR@example.com	011.44.1344.429278	03.08.1987 00:00:00	SA_MAN	12000,00	0,30	100	80
+
+49	148	Gerald	Cambrault	GCAMBRAU@example.com	011.44.1344.619268	04.08.1987 00:00:00	SA_MAN	11000,00	0,30	100	80
+
+50	149	Eleni	Zlotkey	EZLOTKEY@example.com	011.44.1344.429018	05.08.1987 00:00:00	SA_MAN	10500,00	0,20	100	80
+
+51	150	Peter	Tucker	PTUCKER@example.com	011.44.1344.129268	06.08.1987 00:00:00	SA_REP	10000,00	0,30	145	80
+
+52	151	David	Bernstein	DBERNSTE@example.com	011.44.1344.345268	07.08.1987 00:00:00	SA_REP	9500,00	0,25	145	80
+
+53	152	Peter	Hall	PHALL@example.com	011.44.1344.478968	08.08.1987 00:00:00	SA_REP	9000,00	0,25	145	80
+
+54	153	Christopher	Olsen	COLSEN@example.com	011.44.1344.498718	09.08.1987 00:00:00	SA_REP	8000,00	0,20	145	80
+
+55	154	Nanette	Cambrault	NCAMBRAU@example.com	011.44.1344.987668	10.08.1987 00:00:00	SA_REP	7500,00	0,20	145	80
+
+56	155	Oliver	Tuvault	OTUVAULT@example.com	011.44.1344.486508	11.08.1987 00:00:00	SA_REP	7000,00	0,15	145	80
+
+57	156	Janette	King	JKING@example.com	011.44.1345.429268	12.08.1987 00:00:00	SA_REP	10000,00	0,35	146	80
+
+58	157	Patrick	Sully	PSULLY@example.com	011.44.1345.929268	13.08.1987 00:00:00	SA_REP	9500,00	0,35	146	80
+
+59	158	Allan	McEwen	AMCEWEN@example.com	011.44.1345.829268	14.08.1987 00:00:00	SA_REP	9000,00	0,35	146	80
+
+60	159	Lindsey	Smith	LSMITH@example.com	011.44.1345.729268	15.08.1987 00:00:00	SA_REP	8000,00	0,30	146	80
+
+61	160	Louise	Doran	LDORAN@example.com	011.44.1345.629268	16.08.1987 00:00:00	SA_REP	7500,00	0,30	146	80
+
+62	161	Sarath	Sewall	SSEWALL@example.com	011.44.1345.529268	17.08.1987 00:00:00	SA_REP	7000,00	0,25	146	80
+
+63	162	Clara	Vishney	CVISHNEY@example.com	011.44.1346.129268	18.08.1987 00:00:00	SA_REP	10500,00	0,25	147	80
+
+64	163	Danielle	Greene	DGREENE@example.com	011.44.1346.229268	19.08.1987 00:00:00	SA_REP	9500,00	0,15	147	80
+
+65	164	Mattea	Marvins	MMARVINS@example.com	011.44.1346.329268	20.08.1987 00:00:00	SA_REP	7200,00	0,10	147	80
+
+66	165	David	Lee	DLEE@example.com	011.44.1346.529268	21.08.1987 00:00:00	SA_REP	6800,00	0,10	147	80
+
+67	166	Sundar	Ande	SANDE@example.com	011.44.1346.629268	22.08.1987 00:00:00	SA_REP	6400,00	0,10	147	80
+
+68	167	Amit	Banda	ABANDA@example.com	011.44.1346.729268	23.08.1987 00:00:00	SA_REP	6200,00	0,10	147	80
+
+69	168	Lisa	Ozer	LOZER@example.com	011.44.1343.929268	24.08.1987 00:00:00	SA_REP	11500,00	0,25	148	80
+
+70	169	Harrison	Bloom	HBLOOM@example.com	011.44.1343.829268	25.08.1987 00:00:00	SA_REP	10000,00	0,20	148	80
+
+71	170	Tayler	Fox	TFOX@example.com	011.44.1343.729268	26.08.1987 00:00:00	SA_REP	9600,00	0,20	148	80
+
+72	171	William	Smith	WSMITH@example.com	011.44.1343.629268	27.08.1987 00:00:00	SA_REP	7400,00	0,15	148	80
+
+73	172	Elizabeth	Bates	EBATES@example.com	011.44.1343.529268	28.08.1987 00:00:00	SA_REP	7300,00	0,15	148	80
+
+74	173	Sundita	Kumar	SKUMAR@example.com	011.44.1343.329268	29.08.1987 00:00:00	SA_REP	6100,00	0,10	148	80
+
+75	174	Ellen	Abel	EABEL@example.com	011.44.1644.429267	30.08.1987 00:00:00	SA_REP	11000,00	0,30	149	80
+
+76	175	Alyssa	Hutton	AHUTTON@example.com	011.44.1644.429266	31.08.1987 00:00:00	SA_REP	8800,00	0,25	149	80
+
+77	176	Jonathon	Taylor	JTAYLOR@example.com	011.44.1644.429265	01.09.1987 00:00:00	SA_REP	8600,00	0,20	149	80
+
+78	177	Jack	Livingston	JLIVINGS@example.com	011.44.1644.429264	02.09.1987 00:00:00	SA_REP	8400,00	0,20	149	80
+
+79	178	Kimberely	Grant	KGRANT@example.com	011.44.1644.429263	03.09.1987 00:00:00	SA_REP	7000,00	0,15	149	0
+
+80	179	Charles	Johnson	CJOHNSON@example.com	011.44.1644.429262	04.09.1987 00:00:00	SA_REP	6200,00	0,10	149	80
+
+81	180	Winston	Taylor	WTAYLOR@example.com	650.507.9876	05.09.1987 00:00:00	SH_CLERK	3200,00	0,00	120	50
+
+82	181	Jean	Fleaur	JFLEAUR@example.com	650.507.9877	06.09.1987 00:00:00	SH_CLERK	3100,00	0,00	120	50
+
+83	182	Martha	Sullivan	MSULLIVA@example.com	650.507.9878	07.09.1987 00:00:00	SH_CLERK	2500,00	0,00	120	50
+
+84	183	Girard	Geoni	GGEONI@example.com	650.507.9879	08.09.1987 00:00:00	SH_CLERK	2800,00	0,00	120	50
+
+85	184	Nandita	Sarchand	NSARCHAN@example.com	650.509.1876	09.09.1987 00:00:00	SH_CLERK	4200,00	0,00	121	50
+
+86	185	Alexis	Bull	ABULL@example.com	650.509.2876	10.09.1987 00:00:00	SH_CLERK	4100,00	0,00	121	50
+
+87	186	Julia	Dellinger	JDELLING@example.com	650.509.3876	11.09.1987 00:00:00	SH_CLERK	3400,00	0,00	121	50
+
+88	187	Anthony	Cabrio	ACABRIO@example.com	650.509.4876	12.09.1987 00:00:00	SH_CLERK	3000,00	0,00	121	50
+
+89	188	Kelly	Chung	KCHUNG@example.com	650.505.1876	13.09.1987 00:00:00	SH_CLERK	3800,00	0,00	122	50
+
+90	189	Jennifer	Dilly	JDILLY@example.com	650.505.2876	14.09.1987 00:00:00	SH_CLERK	3600,00	0,00	122	50
+
+91	190	Timothy	Gates	TGATES@example.com	650.505.3876	15.09.1987 00:00:00	SH_CLERK	2900,00	0,00	122	50
+
+92	191	Randall	Perkins	RPERKINS@example.com	650.505.4876	16.09.1987 00:00:00	SH_CLERK	2500,00	0,00	122	50
+
+93	192	Sarah	Bell	SBELL@example.com	650.501.1876	17.09.1987 00:00:00	SH_CLERK	4000,00	0,00	123	50
+
+94	193	Britney	Everett	BEVERETT@example.com	650.501.2876	18.09.1987 00:00:00	SH_CLERK	3900,00	0,00	123	50
+
+95	194	Samuel	McCain	SMCCAIN@example.com	650.501.3876	19.09.1987 00:00:00	SH_CLERK	3200,00	0,00	123	50
+
+96	195	Vance	Jones	VJONES@example.com	650.501.4876	20.09.1987 00:00:00	SH_CLERK	2800,00	0,00	123	50
+
+97	196	Alana	Walsh	AWALSH@example.com	650.507.9811	21.09.1987 00:00:00	SH_CLERK	3100,00	0,00	124	50
+
+98	197	Kevin	Feeney	KFEENEY@example.com	650.507.9822	22.09.1987 00:00:00	SH_CLERK	3000,00	0,00	124	50
+
+99	198	Donald	OConnell	DOCONNEL@example.com	650.507.9833	23.09.1987 00:00:00	SH_CLERK	2600,00	0,00	124	50
+
+100	199	Douglas	Grant	DGRANT@example.com	650.507.9844	24.09.1987 00:00:00	SH_CLERK	2600,00	0,00	124	50
+
+101	200	Jennifer	Whalen	JWHALEN@example.com	515.123.4444	25.09.1987 00:00:00	AD_ASST	4400,00	0,00	101	10
+
+102	201	Michael	Hartstein	MHARTSTE@example.com	515.123.5555	26.09.1987 00:00:00	MK_MAN	13000,00	0,00	100	20
+
+103	202	Pat	Fay	PFAY@example.com	603.123.6666	27.09.1987 00:00:00	MK_REP	6000,00	0,00	201	20
+
+104	203	Susan	Mavris	SMAVRIS@example.com	515.123.7777	28.09.1987 00:00:00	HR_REP	6500,00	0,00	101	40
+
+105	204	Hermann	Baer	HBAER@example.com	515.123.8888	29.09.1987 00:00:00	PR_REP	10000,00	0,00	101	70
+
+106	205	Shelley	Higgins	SHIGGINS@example.com	515.123.8080	30.09.1987 00:00:00	AC_MGR	12000,00	0,00	101	110
+
+107	206	William	Gietz	WGIETZ@example.com	515.123.8181	01.10.1987 00:00:00	AC_ACCOUNT	8300,00	0,00	205	110
