@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V6</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="css/tables.css">
+<!--===============================================================================================-->
+</head>
+</html>
+</html>
+<?php
+include("mysqlConnect.php");
+$connection = mysql::mysqlConnect();
+mysqli_query($connection, $sql);
+    $sql = "select *from details";
+    $result = mysqli_query($connection,$sql);
+    $rows = mysqli_num_rows($result);
+    if($rows > 0) {
+        echo "<table id='customers' border='1'  style='border-collapse: collapse;'>";
+        while($row = mysqli_fetch_assoc($result)) {
+            $idno = $row['idno'];
+            $correctName = $row['name'];
+            $correctAge = $row['age'];
+            $correctGender = $row['gender'];
+            $correctCity = $row['city'];
+            $correctFlavour = $row['flavours'];
+            $correctEmail = $row['email'];
+            echo "<tr><td>$idno</td><td>$correctName</td><td>$correctAge</td>
+            <td>$correctGender</td><td>$correctCity</td><td>$correctFlavour</td><td>$correctEmail</td></tr>";
+        }
+        echo "</table>";
+    }
+    mysql::mysqlClose($connection);
+?>
