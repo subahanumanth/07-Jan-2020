@@ -1,0 +1,27 @@
+Triggers :
+
+1) create trigger name before insert on person for each row begin if new.age=5 then set new.age=50; end if; end//
+
+2)create trigger name before insert on person for each row begin if new.age=3 then insert into testtable (name, age) values("hanu", 20); end if; end//
+
+3) create trigger name before insert on person for each row begin if new.age=3 then signal sqlstate "45000" set message_text="error"; end if; end//
+
+Stored Procedures : 
+
+1)create procedure name() begin select *from person; end//
+
+2)create procedure name(in var int(3)) begin insert into person values(var); end//
+
+3)create procedure name(out var int(3)) begin select count(age) into var from person; end//
+
+View : 
+
+1) create view name as select *from person;
+
+2) select *from name;
+
+Profiling : 
+
+set profiling=1;
+show profiles;
+
