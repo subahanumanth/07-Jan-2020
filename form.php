@@ -2,11 +2,11 @@
 if(isset($_POST["submit"])){
 $username=$_POST["name"];
 $password=$_POST["password"];
-if($username=="hanu" && $password=="1234"){
+if($username=="hanum" && $password=="1234"){
 echo "Welcome {$_POST["name"]}";
 }
 else{
-echo "user doesn't exist";
+echo "user doesn't exis";
 }
 }
 else{
