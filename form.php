@@ -2,7 +2,7 @@
 if(isset($_POST["submit"])){
 $username=$_POST["name"];
 $password=$_POST["password"];
-if($username=="hanum" && $password=="1234"){
+if($username=="hanumanth" && $password=="1234"){
 echo "Welcome {$_POST["name"]}";
 }
 else{
