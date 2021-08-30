@@ -1,5 +1,5 @@
 <?php
-$class=array(4,6,76865,2,2,5,645,3);
+$class=array(4,6,76865,2,2,5,645);
 $sentence="never ever give up";
 echo print_r($class)."<br>";
 echo max($class)."<br>";
