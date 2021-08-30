@@ -6,7 +6,7 @@ if($username=="hanumanth" && $password=="12345678"){
 echo "Welcome {$_POST["name"]}";
 }
 else{
-echo "user doesn't exis";
+echo "user doesn't exist";
 }
 }
 else{
